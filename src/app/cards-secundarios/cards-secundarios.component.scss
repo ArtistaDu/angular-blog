@@ -1,0 +1,33 @@
+:host {
+  display: flex;
+  align-items: flex-start;
+}
+div {
+  width: 70%;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+span {
+  font-size: 12px;
+}
+
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: relative;
+  bottom: -6px;
+
+  i {
+    background-image: url('../../assets/img/arrow-right-light.svg');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+}
