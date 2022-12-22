@@ -14,10 +14,13 @@
 
 .container_title_description {
   width: 50%;
-
+  span {
+    font-size: 12px;
+    margin-top: 50px;
+  }
   .card_description {
     font-size: 14px;
-    margin-top: 25px;
+    margin: 20px 0 15px;
   }
 }
 
@@ -37,7 +40,7 @@
 
 
     button {
-      padding: 6px 12px;
+      padding: 7px 14px;
       font-size: 11px;
       font-weight: 600;
       letter-spacing: 1px;
@@ -45,8 +48,6 @@
       background-color: hsl(273, 100%, 80%);
       display: flex;
       align-items: center;
-      cursor: pointer;
-
       i {
         background-image: url('../../assets/img/arrow-right-regular.svg');
         background-repeat: no-repeat;

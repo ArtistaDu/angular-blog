@@ -1,34 +1,4 @@
 main {
   padding: 45px 60px;
-  display: flex;
-  align-items: center;
-  // justify-content: space-between;
 }
 
-h3 {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
-}
-
-.container_cards {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  bottom: -13px;
-
-  ul {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 100%;
-  }
-
-    li:not(:last-child){
-      margin-bottom: 15px;
-      border-bottom: 1px solid hsl(273, 100%, 30%);;
-      padding-bottom: 1em;
-
-    }
-  }

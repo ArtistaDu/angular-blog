@@ -29,5 +29,10 @@ button {
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
+
+    &:hover {
+      filter: invert(100%) sepia(80%) saturate(5370%) hue-rotate(190deg) brightness(109%) contrast(111%);
+      transition: 0.15s;
+    }
   }
 }
