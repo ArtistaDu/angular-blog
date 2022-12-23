@@ -1,15 +1,25 @@
 <div>
-  <div>
-    <div class="profile-pic"></div>
-    <div class="container_username_postinfo">
-      <span></span>
+  <div class="post_author_info">
+    <div class="container_profile_info">
+      <div class="profile_pic"></div>
+      <div class="container_username_postinfo">
+        <span class="username">{{author}}</span>
+        <span class="post_info">Dez 19, 2022 • {{averageTime}} minutes read</span>
+      </div>
+    </div>
+    <div class="socialmedia_icons">
+      <span class="icon twitter_icon"></span>
+      <span class="icon facebook_icon"></span>
+      <span class="icon linkedin_icon"></span>
       <span></span>
     </div>
   </div>
-  <div class="socialmedia_icons">
-    <span class="icon twitter_icon"></span>
-    <span class="icon facebook_icon"></span>
-    <span class="icon linkedin_icon"></span>
-    <span></span>
+  <img src="{{img}}">
+  <h1>{{title}}</h1>
+  <div class="content">
+    <p>{{postContent}}</p>
+    <p>{{postContent}}</p>
+    <p>{{postContent}}</p>
   </div>
+  <app-container-recommendations></app-container-recommendations>
 </div>

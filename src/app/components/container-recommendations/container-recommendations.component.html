@@ -1,0 +1,12 @@
+<article class="recommendations">
+  <h4>You might also like</h4>
+  <div>
+    <app-might-like-cards *ngFor="let article of articles"
+    id={{article.id}}
+    (click)="routePost(article.id)"
+    title="{{article.title}}"
+    imgUrl="{{article.imgThumb}}"
+    cardDescription="{{article.description}}">
+  </app-might-like-cards>
+  </div>
+</article>

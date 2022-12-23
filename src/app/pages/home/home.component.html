@@ -1,0 +1,19 @@
+<div>
+  <app-card-principal id='1' (click)="routePost('1')">
+  </app-card-principal>
+  <article class="container_cards">
+    <h3>POPULAR POSTS</h3>
+    <ul>
+      <li *ngFor="let article of articles">
+        <app-cards-secundarios
+          id={{article.id}}
+          (click)="routePost(article.id)"
+          author = {{article.author}}
+          title = {{article.title}}
+          averageTime={{article.averageTime}}>
+        </app-cards-secundarios>
+      </li>
+    </ul>
+  </article>
+</div>
+<app-container-recommendations></app-container-recommendations>
