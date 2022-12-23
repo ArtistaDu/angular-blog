@@ -8,6 +8,7 @@ import { CardPrincipalComponent } from './card-principal/card-principal.componen
 import { CardsSecundariosComponent } from './cards-secundarios/cards-secundarios.component';
 import { HomeComponent } from './home/home.component';
 import { MightLikeCardsComponent } from './might-like-cards/might-like-cards.component';
+import { PostComponent } from './pages/post/post.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MightLikeCardsComponent } from './might-like-cards/might-like-cards.com
     CardPrincipalComponent,
     CardsSecundariosComponent,
     HomeComponent,
-    MightLikeCardsComponent
+    MightLikeCardsComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

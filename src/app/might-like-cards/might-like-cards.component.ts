@@ -7,7 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MightLikeCardsComponent implements OnInit {
   @Input() title!: string
+  @Input() cardDescription!: string
   @Input() imgUrl!: string
+
 
 
   constructor() { }
