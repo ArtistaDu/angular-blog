@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
+import { Component, OnChanges, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { articles } from 'src/app/data/data';
 
 @Component({
@@ -17,8 +18,14 @@ export class PostComponent implements OnInit {
 
 
   constructor(
-    private route:ActivatedRoute
-  ) { }
+    private route:ActivatedRoute,
+    private router: Router,
+    private vps:ViewportScroller
+  ) {
+    this.router.routeReuseStrategy.shouldReuseRoute = function() {
+      return false;}
+  }
+
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(value =>
@@ -26,7 +33,10 @@ export class PostComponent implements OnInit {
       )
 
       this.setValues(this.id)
+      this.vps.scrollToPosition([0, 0]);
   }
+
+
 
   setValues(id: string | null) {
     const result = articles.filter(article => article.id == id)

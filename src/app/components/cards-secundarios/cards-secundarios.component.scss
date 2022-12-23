@@ -10,6 +10,10 @@ div {
 h2 {
   font-size: 22px;
   font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 span {
