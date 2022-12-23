@@ -1,3 +1,6 @@
+This project simulates a music blog and was made to develop Angular development skills. The home page design was based on Dwinawan's project on Dribble (https://dribbble.com/shots/14377374--Exploration-Sport-News-Hero-Section?utm_source=Clipboard_Shot&utm_campaign=dwinawan&utm_content=%23Exploration%20-%20Sport%20News%20Hero%20Section&utm_medium=Social_Share)
+
+
 # AngularBlog
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
